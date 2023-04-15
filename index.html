@@ -25,10 +25,24 @@
                         >Web<span class="studio-black">Studio</span></a
                     >
                 </div>
-                <nav class="head-nav">
-                    <a href="index.html" class="nav">Agencja</a>
-                    <a href="portfolio.html" class="nav">Portfolio</a>
-                    <a href="kontakt" class="nav">Kontakt</a>
+                <nav>
+                    <ul class="head-nav">
+                        <li>
+                            <div class="selection-studio">
+                                <a href="index.html" class="nav">Agencja</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="portfolio.html" class="nav"
+                                    >Portfolio</a
+                                >
+                            </div>
+                        </li>
+                        <li>
+                            <div><a href="kontakt" class="nav">Kontakt</a></div>
+                        </li>
+                    </ul>
                 </nav>
                 <div class="head-contact">
                     <a
@@ -63,360 +77,420 @@
                         efektywne rozwiązania<br />
                         dla waszego biznesu
                     </h1>
-                    <button type="button" class="service">Zamów usługę</button>
+                    <div>
+                        <button
+                            class="btn-modal service"
+                            type="button"
+                            data-modal-open
+                        >
+                            Zamów usługę
+                        </button>
+                    </div>
                 </div>
             </section>
             <section class="lorem section">
-                <div class="container studio-container">
-                    <div>
-                        <p class="box-icon-color">
-                            <svg class="icon-color">
-                                <use
-                                    href="./images/icons.svg/antenna.svg#icon-antenna"
-                                ></use>
-                            </svg>
-                        </p>
-                        <h3 class="studio">lorem ipsum</h3>
-                        <p class="studio-item">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Nam vel arcu sem. Sed non sodales dui.
-                            Interdum et malesuada
-                        </p>
-                    </div>
-                    <div>
-                        <p class="box-icon-color">
-                            <svg class="icon-color">
-                                <use
-                                    href="./images/icons.svg/clock.svg#icon-clock"
-                                ></use>
-                            </svg>
-                        </p>
-                        <h3 class="studio">lorem ipsum</h3>
-                        <p class="studio-item">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Nam vel arcu sem. Sed non sodales dui.
-                            Interdum et malesuada
-                        </p>
-                    </div>
-                    <div>
-                        <p class="box-icon-color">
-                            <svg class="icon-color">
-                                <use
-                                    href="./images/icons.svg/diagram.svg#icon-diagram"
-                                ></use>
-                            </svg>
-                        </p>
-                        <h3 class="studio">lorem ipsum</h3>
-                        <p class="studio-item">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Nam vel arcu sem. Sed non sodales dui.
-                            Interdum et malesuada
-                        </p>
-                    </div>
-                    <div>
-                        <p class="box-icon-color">
-                            <svg class="icon-color">
-                                <use
-                                    href="./images/icons.svg/astronaut.svg#icon-astronaut"
-                                ></use>
-                            </svg>
-                        </p>
-                        <h3 class="studio">lorem ipsum</h3>
-                        <p class="studio-item">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Nam vel arcu sem. Sed non sodales dui.
-                            Interdum et malesuada
-                        </p>
-                    </div>
+                <div class="container">
+                    <ul class="studio-container">
+                        <li>
+                            <div>
+                                <p class="box-icon-color">
+                                    <svg class="icon-color">
+                                        <use
+                                            href="./images/icons.svg/antenna.svg#icon-antenna"
+                                        ></use>
+                                    </svg>
+                                </p>
+                                <h3 class="studio">lorem ipsum</h3>
+                                <p class="studio-item">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Nam vel arcu sem. Sed non
+                                    sodales dui. Interdum et malesuada
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p class="box-icon-color">
+                                    <svg class="icon-color">
+                                        <use
+                                            href="./images/icons.svg/clock.svg#icon-clock"
+                                        ></use>
+                                    </svg>
+                                </p>
+                                <h3 class="studio">lorem ipsum</h3>
+                                <p class="studio-item">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Nam vel arcu sem. Sed non
+                                    sodales dui. Interdum et malesuada
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p class="box-icon-color">
+                                    <svg class="icon-color">
+                                        <use
+                                            href="./images/icons.svg/diagram.svg#icon-diagram"
+                                        ></use>
+                                    </svg>
+                                </p>
+                                <h3 class="studio">lorem ipsum</h3>
+                                <p class="studio-item">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Nam vel arcu sem. Sed non
+                                    sodales dui. Interdum et malesuada
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p class="box-icon-color">
+                                    <svg class="icon-color">
+                                        <use
+                                            href="./images/icons.svg/astronaut.svg#icon-astronaut"
+                                        ></use>
+                                    </svg>
+                                </p>
+                                <h3 class="studio">lorem ipsum</h3>
+                                <p class="studio-item">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Nam vel arcu sem. Sed non
+                                    sodales dui. Interdum et malesuada
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </section>
             <section class="section">
                 <div class="container">
                     <h2>Czym się zajmujemy</h2>
-                    <div class="work">
-                        <img
-                            width="370"
-                            height="294"
-                            src="images/laptop.jpg"
-                            alt="laptop"
-                        />
-                        <img
-                            width="370"
-                            height="294"
-                            src="images/telefon.jpg"
-                            alt="telefon"
-                        />
-                        <img
-                            width="370"
-                            height="294"
-                            src="images/tablet.jpg"
-                            alt="tablet"
-                        />
-                    </div>
+                    <ul class="work">
+                        <li>
+                            <figure class="work-picture">
+                                <img
+                                    width="370"
+                                    height="294"
+                                    src="images/laptop.jpg"
+                                    alt="laptop"
+                                />
+
+                                <figcaption class="work-description">
+                                    aplikacje komputerowe
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure class="work-picture">
+                                <img
+                                    width="370"
+                                    height="294"
+                                    src="images/telefon.jpg"
+                                    alt="telefon"
+                                />
+                                <figcaption class="work-description">
+                                    aplikacje mobilne
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure class="work-picture">
+                                <img
+                                    width="370"
+                                    height="294"
+                                    src="images/tablet.jpg"
+                                    alt="tablet"
+                                />
+                                <figcaption class="work-description">
+                                    rozwiązania graficzne
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </ul>
                 </div>
             </section>
             <section class="team-studio section">
                 <div class="container">
                     <h2>Nasz zespół</h2>
-                    <div class="team-box">
-                        <figure class="team-photo">
-                            <img
-                                width="270"
-                                height="260"
-                                src="images/product-designer.jpg"
-                                alt="John
+                    <ul class="team-box">
+                        <li>
+                            <figure class="team-photo">
+                                <img
+                                    width="270"
+                                    height="260"
+                                    src="images/product-designer.jpg"
+                                    alt="John
                          Doe Product Designer"
-                            />
-                            <figcaption>
-                                <h3 class="team">John Doe</h3>
-                                <p class="team-position">Product Designer</p>
-                                <div>
-                                    <ul class="social-media-list social-media">
-                                        <li>
-                                            <a
-                                                href="#"
-                                                class="social-media-items"
-                                            >
-                                                <svg class="icon-social">
-                                                    <use
-                                                        href="./images/icons.svg/instagram.svg#icon-instagram"
-                                                    ></use>
-                                                </svg>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a
-                                                href="#"
-                                                class="social-media-items"
-                                            >
-                                                <svg class="icon-social">
-                                                    <use
-                                                        href="./images/icons.svg/twitter.svg#icon-twitter"
-                                                    ></use>
-                                                </svg>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a
-                                                href="#"
-                                                class="social-media-items"
-                                            >
-                                                <svg class="icon-social">
-                                                    <use
-                                                        href="./images/icons.svg/facebook.svg#icon-facebook"
-                                                    ></use>
-                                                </svg>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a
-                                                href="#"
-                                                class="social-media-items"
-                                            >
-                                                <svg class="icon-social">
-                                                    <use
-                                                        href="./images/icons.svg/linkedin.svg#icon-linkedin"
-                                                    ></use>
-                                                </svg>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </figcaption>
-                        </figure>
-                        <figure class="team-photo">
-                            <img
-                                width="270"
-                                height="260"
-                                src="images/frontend-developer.jpg"
-                                alt="John DoeFrontend Developer"
-                            />
-                            <figcaption>
-                                <h3 class="team">John Doe</h3>
-                                <p class="team-position">Frontend Developer</p>
-                                <div>
-                                    <ul class="social-media-list social-media">
-                                        <li>
-                                            <a
-                                                href="#"
-                                                class="social-media-items"
-                                            >
-                                                <svg class="icon-social">
-                                                    <use
-                                                        href="./images/icons.svg/instagram.svg#icon-instagram"
-                                                    ></use>
-                                                </svg>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a
-                                                href="#"
-                                                class="social-media-items"
-                                            >
-                                                <svg class="icon-social">
-                                                    <use
-                                                        href="./images/icons.svg/twitter.svg#icon-twitter"
-                                                    ></use>
-                                                </svg>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a
-                                                href="#"
-                                                class="social-media-items"
-                                            >
-                                                <svg class="icon-social">
-                                                    <use
-                                                        href="./images/icons.svg/facebook.svg#icon-facebook"
-                                                    ></use>
-                                                </svg>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a
-                                                href="#"
-                                                class="social-media-items"
-                                            >
-                                                <svg class="icon-social">
-                                                    <use
-                                                        href="./images/icons.svg/linkedin.svg#icon-linkedin"
-                                                    ></use>
-                                                </svg>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </figcaption>
-                        </figure>
-                        <figure class="team-photo">
-                            <img
-                                width="270"
-                                height="260"
-                                src="images/marketing.jpg"
-                                alt="John Doe Marketing"
-                            />
-                            <figcaption>
-                                <h3 class="team">John Doe</h3>
-                                <p class="team-position">Marketing</p>
-                                <div>
-                                    <ul class="social-media-list social-media">
-                                        <li>
-                                            <a
-                                                href="#"
-                                                class="social-media-items"
-                                            >
-                                                <svg class="icon-social">
-                                                    <use
-                                                        href="./images/icons.svg/instagram.svg#icon-instagram"
-                                                    ></use>
-                                                </svg>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a
-                                                href="#"
-                                                class="social-media-items"
-                                            >
-                                                <svg class="icon-social">
-                                                    <use
-                                                        href="./images/icons.svg/twitter.svg#icon-twitter"
-                                                    ></use>
-                                                </svg>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a
-                                                href="#"
-                                                class="social-media-items"
-                                            >
-                                                <svg class="icon-social">
-                                                    <use
-                                                        href="./images/icons.svg/facebook.svg#icon-facebook"
-                                                    ></use>
-                                                </svg>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a
-                                                href="#"
-                                                class="social-media-items"
-                                            >
-                                                <svg class="icon-social">
-                                                    <use
-                                                        href="./images/icons.svg/linkedin.svg#icon-linkedin"
-                                                    ></use>
-                                                </svg>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </figcaption>
-                        </figure>
-                        <figure class="team-photo">
-                            <img
-                                width="270"
-                                height="260"
-                                src="images/ui-designer.jpg"
-                                alt="John Doe UI Designer"
-                            />
-                            <figcaption>
-                                <h3 class="team">John Doe</h3>
-                                <p class="team-position">UI Designer</p>
-                                <div>
-                                    <ul class="social-media-list social-media">
-                                        <li>
-                                            <a
-                                                href="#"
-                                                class="social-media-items"
-                                            >
-                                                <svg class="icon-social">
-                                                    <use
-                                                        href="./images/icons.svg/instagram.svg#icon-instagram"
-                                                    ></use>
-                                                </svg>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a
-                                                href="#"
-                                                class="social-media-items"
-                                            >
-                                                <svg class="icon-social">
-                                                    <use
-                                                        href="./images/icons.svg/twitter.svg#icon-twitter"
-                                                    ></use>
-                                                </svg>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a
-                                                href="#"
-                                                class="social-media-items"
-                                            >
-                                                <svg class="icon-social">
-                                                    <use
-                                                        href="./images/icons.svg/facebook.svg#icon-facebook"
-                                                    ></use>
-                                                </svg>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a
-                                                href="#"
-                                                class="social-media-items"
-                                            >
-                                                <svg class="icon-social">
-                                                    <use
-                                                        href="./images/icons.svg/linkedin.svg#icon-linkedin"
-                                                    ></use>
-                                                </svg>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </figcaption>
-                        </figure>
-                    </div>
+                                />
+                                <figcaption>
+                                    <h3 class="team">John Doe</h3>
+                                    <p class="team-position">
+                                        Product Designer
+                                    </p>
+                                    <div>
+                                        <ul
+                                            class="social-media-list social-media"
+                                        >
+                                            <li>
+                                                <a
+                                                    href="#"
+                                                    class="social-media-items"
+                                                >
+                                                    <svg class="icon-social">
+                                                        <use
+                                                            href="./images/icons.svg/instagram.svg#icon-instagram"
+                                                        ></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#"
+                                                    class="social-media-items"
+                                                >
+                                                    <svg class="icon-social">
+                                                        <use
+                                                            href="./images/icons.svg/twitter.svg#icon-twitter"
+                                                        ></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#"
+                                                    class="social-media-items"
+                                                >
+                                                    <svg class="icon-social">
+                                                        <use
+                                                            href="./images/icons.svg/facebook.svg#icon-facebook"
+                                                        ></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#"
+                                                    class="social-media-items"
+                                                >
+                                                    <svg class="icon-social">
+                                                        <use
+                                                            href="./images/icons.svg/linkedin.svg#icon-linkedin"
+                                                        ></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure class="team-photo">
+                                <img
+                                    width="270"
+                                    height="260"
+                                    src="images/frontend-developer.jpg"
+                                    alt="John DoeFrontend Developer"
+                                />
+                                <figcaption>
+                                    <h3 class="team">John Doe</h3>
+                                    <p class="team-position">
+                                        Frontend Developer
+                                    </p>
+                                    <div>
+                                        <ul
+                                            class="social-media-list social-media"
+                                        >
+                                            <li>
+                                                <a
+                                                    href="#"
+                                                    class="social-media-items"
+                                                >
+                                                    <svg class="icon-social">
+                                                        <use
+                                                            href="./images/icons.svg/instagram.svg#icon-instagram"
+                                                        ></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#"
+                                                    class="social-media-items"
+                                                >
+                                                    <svg class="icon-social">
+                                                        <use
+                                                            href="./images/icons.svg/twitter.svg#icon-twitter"
+                                                        ></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#"
+                                                    class="social-media-items"
+                                                >
+                                                    <svg class="icon-social">
+                                                        <use
+                                                            href="./images/icons.svg/facebook.svg#icon-facebook"
+                                                        ></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#"
+                                                    class="social-media-items"
+                                                >
+                                                    <svg class="icon-social">
+                                                        <use
+                                                            href="./images/icons.svg/linkedin.svg#icon-linkedin"
+                                                        ></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure class="team-photo">
+                                <img
+                                    width="270"
+                                    height="260"
+                                    src="images/marketing.jpg"
+                                    alt="John Doe Marketing"
+                                />
+                                <figcaption>
+                                    <h3 class="team">John Doe</h3>
+                                    <p class="team-position">Marketing</p>
+                                    <div>
+                                        <ul
+                                            class="social-media-list social-media"
+                                        >
+                                            <li>
+                                                <a
+                                                    href="#"
+                                                    class="social-media-items"
+                                                >
+                                                    <svg class="icon-social">
+                                                        <use
+                                                            href="./images/icons.svg/instagram.svg#icon-instagram"
+                                                        ></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#"
+                                                    class="social-media-items"
+                                                >
+                                                    <svg class="icon-social">
+                                                        <use
+                                                            href="./images/icons.svg/twitter.svg#icon-twitter"
+                                                        ></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#"
+                                                    class="social-media-items"
+                                                >
+                                                    <svg class="icon-social">
+                                                        <use
+                                                            href="./images/icons.svg/facebook.svg#icon-facebook"
+                                                        ></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#"
+                                                    class="social-media-items"
+                                                >
+                                                    <svg class="icon-social">
+                                                        <use
+                                                            href="./images/icons.svg/linkedin.svg#icon-linkedin"
+                                                        ></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure class="team-photo">
+                                <img
+                                    width="270"
+                                    height="260"
+                                    src="images/ui-designer.jpg"
+                                    alt="John Doe UI Designer"
+                                />
+                                <figcaption>
+                                    <h3 class="team">John Doe</h3>
+                                    <p class="team-position">UI Designer</p>
+                                    <div>
+                                        <ul
+                                            class="social-media-list social-media"
+                                        >
+                                            <li>
+                                                <a
+                                                    href="#"
+                                                    class="social-media-items"
+                                                >
+                                                    <svg class="icon-social">
+                                                        <use
+                                                            href="./images/icons.svg/instagram.svg#icon-instagram"
+                                                        ></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#"
+                                                    class="social-media-items"
+                                                >
+                                                    <svg class="icon-social">
+                                                        <use
+                                                            href="./images/icons.svg/twitter.svg#icon-twitter"
+                                                        ></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#"
+                                                    class="social-media-items"
+                                                >
+                                                    <svg class="icon-social">
+                                                        <use
+                                                            href="./images/icons.svg/facebook.svg#icon-facebook"
+                                                        ></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#"
+                                                    class="social-media-items"
+                                                >
+                                                    <svg class="icon-social">
+                                                        <use
+                                                            href="./images/icons.svg/linkedin.svg#icon-linkedin"
+                                                        ></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </ul>
                 </div>
             </section>
             <section class="section">
@@ -431,7 +505,7 @@
                                     ></use>
                                 </svg>
                             </li>
-                            <li class="client-items" >
+                            <li class="client-items">
                                 <svg class="icon-clients first" tabindex="0">
                                     <use
                                         href="./images/icons.svg/tagline-here.svg#icon-tagline-here"
@@ -532,5 +606,13 @@
                 </div>
             </div>
         </footer>
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button type="button" class="btn-close" data-modal-close>
+                    X
+                </button>
+            </div>
+        </div>
+        <script src="./js/modal.js"></script>
     </body>
 </html>
