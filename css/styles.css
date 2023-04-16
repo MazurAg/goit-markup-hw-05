@@ -100,12 +100,26 @@ ul {
     height: 4px;
     border-radius: 2px;
 }
+.selection-studio::after {
+    content: "";
+    position: absolute;
+    display: block;
+    font-weight: 500;
+    line-height: 1.1;
+    font-size: 14px;
+    background-color: var(--active-color);
+    text-decoration: none;
+}
 .head-nav {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 46px;
     margin-right: 345px;
     margin-left: 93px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav {
     font-weight: 500;
@@ -114,10 +128,15 @@ ul {
     color: var(--tekst-color-but1);
     text-decoration: none;
 }
+.selection-nav {
+    color: var(--active-color);
+
+}
 .nav:hover,
 .nav:focus {
     color: var(--active-color);
 }
+
 .head-contact {
     display: flex;
     align-items: center;
@@ -150,6 +169,9 @@ ul {
     font-size: 14px;
     color: var(--text-color-grey);
     text-decoration: none;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .studio-link:hover,
 .studio-link:focus {
@@ -211,11 +233,12 @@ ul {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
+    overflow: hidden;
 }
 .modal {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 30%;
+    left: 30%;
     transform: translate(-50%, -50%);
     width: 528px;
     min-height: 581px;
@@ -223,11 +246,39 @@ ul {
     border-radius: 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
+    transform: translateY(100%);   
+    transition-duration: 1000ms; 
+}
+.modal {
+    animation: animate3 4000ms infinite 50ms;
+}
+.modal::before {
+    content: "Pozdrowienia dla mojego Mentora :D";
+}
+@keyframes animate3 {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(3deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
 }
 .is-hidden {
     pointer-events: none;
     visibility: hidden;
-    opacity: 0;
+    opacity: 3;
+}
+.is-hidden .modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);   
+    transition-duration: 1000ms; 
 }
 .btn-close {
     position: absolute;
@@ -362,6 +413,9 @@ h2 {
     height: 44px;
     background: #ffffff;
     border-radius: 50%;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-social {
     width: 20px;
@@ -387,15 +441,33 @@ h2 {
     fill: #afb1b8;
     cursor: pointer;
     border-radius: 4px;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .client-items {
     width: 170px;
     height: 92px;
 }
-.client-items .icon-clients:hover,
-.client-items .icon-clients:focus {
+.icon-clients:nth-child(1):hover,
+.icon-clients:nth-child(1):focus {
+    animation: animateX10Y15 2000ms infinite 1000ms;
     border-color: var(--active-color);
     fill: var(--active-color);
+}
+.icon-clients:nth-child(1):before {
+    content: 'translate(-10px -15px)';
+}
+@keyframes animateX10Y15 {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(-10px, -15px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
 }
 .first {
     padding: 17.71px 32px 14.25px 32px;
@@ -425,6 +497,9 @@ h2 {
     letter-spacing: 0.03em;
     border: none;
     cursor: pointer;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu-but .but:hover,
 .menu-but .but:focus {
@@ -568,6 +643,9 @@ h2 {
     fill: #ffffff;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-media-list {
     list-style: none;
