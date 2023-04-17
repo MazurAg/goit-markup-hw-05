@@ -441,11 +441,11 @@ h2 {
 }
 .icon-clients:nth-child(1):hover,
 .icon-clients:nth-child(1):focus {
-    animation: animateX10Y15 2000ms infinite 1000ms;
+    /*animation: animateX10Y15 2000ms infinite 1000ms;*/
     border-color: var(--active-color);
     fill: var(--active-color);
 }
-.icon-clients:nth-child(1):before {
+/*.icon-clients:nth-child(1):before {
     content: 'translate(-10px -15px)';
 }
 @keyframes animateX10Y15 {
@@ -458,7 +458,7 @@ h2 {
     100% {
         transform: translate(0, 0);
     }
-}
+}*/
 .first {
     padding: 17.71px 32px 14.25px 32px;
 }
