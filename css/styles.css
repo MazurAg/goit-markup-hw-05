@@ -256,7 +256,10 @@ ul {
 .is-hidden {
     pointer-events: none;
     visibility: hidden;
-    opacity: 3;
+    opacity: 0;
+    transition-property: opacity, visibility;
+    transition-delay: 400ms;
+    
 }
 .is-hidden .modal {
     transform: translateY(-150%);
